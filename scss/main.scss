@@ -1,0 +1,93 @@
+@import "./_reset.scss";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+.menu {
+  display: grid;
+  align-content: center;
+  background-color: beige;
+  transition: height 0.5s ease;
+  height: 32px;
+  width: 768px;
+
+  .menu__list {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    list-style-type: none;
+  }
+
+  img {
+    max-width: 32px;
+    max-height: 32px;
+    cursor: pointer;
+
+  }
+}
+
+.menu__item {
+  
+  text-align: center;
+  padding: 0 13px;
+  a {
+    text-decoration: none;
+    color: #333333;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .menu {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu {
+    width: 640px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .menu {
+    width: 480px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .menu {
+    width: 360px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(-3px) scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-jump {
+  animation: jump 0.5s ease-in-out;
+}
+
+.display-none {
+  display: none !important;
+}
