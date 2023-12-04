@@ -9,37 +9,10 @@
   padding: 0;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
+body, html {
+  height: 100%;
 }
 
-.container {
-  display: grid;
-  justify-content: center;
-}
-
-.menu {
-  display: grid;
-  align-content: center;
-  background-color: beige;
-  transition: height 0.5s ease;
-  height: 32px;
-  width: 768px;
-}
-.menu .menu__list {
-  display: grid;
-  justify-content: center;
-  grid-auto-flow: column;
-  list-style-type: none;
-}
-
-.menu__item {
-  text-align: center;
-  padding: 0 13px;
-}
-.menu__item a {
-  text-decoration: none;
-  color: #333333;
+.bmokkflgfkj {
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
